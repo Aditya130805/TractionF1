@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1,
+        "date": "Mar 20,",
+        "numericDate": "2022-03-20 20:30:00+0530",
+        "time": "20:30 IST",
+        "flagImg": "bahrain",
+        "raceName": "BAHRAIN GP"
+    },
+    {
+        "id": 2,
+        "date": "Mar 27,",
+        "numericDate": "2022-03-27 22:30:00+0530",
+        "time": "22:30 IST",
+        "flagImg": "saudi",
+        "raceName": "SAUDI ARABIAN GP"
+    },
+    {
+        "id": 3,
+        "date": "Apr 10,",
+        "numericDate": "2022-04-10 10:30:00+0530",
+        "time": "10:30 IST",
+        "flagImg": "australia",
+        "raceName": "AUSTRALIAN GP"
+    },
+    {
+        "id": 4,
+        "date": "Apr 24,",
+        "numericDate": "2022-04-24 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "italy",
+        "raceName": "EMILIA ROMAGNA GP"
+    },
+    {
+        "id": 5,
+        "date": "May 9,",
+        "numericDate": "2022-05-09 01:00:00+0530",
+        "time": "01:00 IST",
+        "flagImg": "usa",
+        "raceName": "MIAMI GP"
+    },
+    {
+        "id": 6,
+        "date": "May 22,",
+        "numericDate": "2022-05-22 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "spain",
+        "raceName": "SPANISH GP"
+    },
+    {
+        "id": 7,
+        "date": "May 29,",
+        "numericDate": "2022-05-29 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "monaco",
+        "raceName": "MONACO GP"
+    },
+    {
+        "id": 8,
+        "date": "Jun 12,",
+        "numericDate": "2022-06-12 16:30:00+0530",
+        "time": "16:30 IST",
+        "flagImg": "azerbaijan",
+        "raceName": "AZERBAIJAN GP"
+    },
+    {
+        "id": 9,
+        "date": "Jun 19,",
+        "numericDate": "2022-06-19 23:30:00+0530",
+        "time": "23:30 IST",
+        "flagImg": "canada",
+        "raceName": "CANADIAN GP"
+    },
+    {
+        "id": 10,
+        "date": "Jul 3,",
+        "numericDate": "2022-07-03 19:30:00+0530",
+        "time": "19:30 IST",
+        "flagImg": "uk",
+        "raceName": "BRITISH GP"
+    },
+    {
+        "id": 11,
+        "date": "Jul 10,",
+        "numericDate": "2022-07-10 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "austria",
+        "raceName": "AUSTRIAN GP"
+    },
+    {
+        "id": 12,
+        "date": "Jul 24,",
+        "numericDate": "2022-07-24 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "france",
+        "raceName": "FRENCH GP"
+    },
+    {
+        "id": 13,
+        "date": "Jul 31,",
+        "numericDate": "2022-07-31 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "hungary",
+        "raceName": "HUNGARIAN GP"
+    },
+    {
+        "id": 14,
+        "date": "Aug 28,",
+        "numericDate": "2022-08-28 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "belgium",
+        "raceName": "BELGIAN GP"
+    },
+    {
+        "id": 15,
+        "date": "Sep 4,",
+        "numericDate": "2022-09-04 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "netherlands",
+        "raceName": "DUTCH GP"
+    },
+    {
+        "id": 16,
+        "date": "Sep 11,",
+        "numericDate": "2022-09-11 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "italy",
+        "raceName": "ITALIAN GP"
+    },
+    {
+        "id": 17,
+        "date": "Oct 2,",
+        "numericDate": "2022-10-02 17:30:00+0530",
+        "time": "17:30 IST",
+        "flagImg": "singapore",
+        "raceName": "SINGAPORE GP"
+    },
+    {
+        "id": 18,
+        "date": "Oct 9,",
+        "numericDate": "2022-10-09 10:30:00+0530",
+        "time": "10:30 IST",
+        "flagImg": "japan",
+        "raceName": "JAPANESE GP"
+    },
+    {
+        "id": 19,
+        "date": "Oct 24,",
+        "numericDate": "2022-10-24 00:30:00+0530",
+        "time": "00:30 IST",
+        "flagImg": "usa",
+        "raceName": "UNITED STATES GP"
+    },
+    {
+        "id": 20,
+        "date": "Oct 31,",
+        "numericDate": "2022-10-31 01:30:00+0530",
+        "time": "01:30 IST",
+        "flagImg": "mexico",
+        "raceName": "MEXICAN GP"
+    },
+    {
+        "id": 21,
+        "date": "Nov 13,",
+        "numericDate": "2022-11-13 23:30:00+0530",
+        "time": "23:30 IST",
+        "flagImg": "brazil",
+        "raceName": "BRAZILIAN GP"
+    },
+    {
+        "id": 22,
+        "date": "Nov 20,",
+        "numericDate": "2022-11-20 18:30:00+0530",
+        "time": "18:30 IST",
+        "flagImg": "uae",
+        "raceName": "ABU DHABI GP"
+    }
+]

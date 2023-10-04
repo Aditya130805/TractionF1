@@ -1,0 +1,793 @@
+[
+    {
+        "id": 1,
+        "nameOfRace": "BAHRAIN GRAND \nPRIX",
+        "layoutOfRace": "bahrainLayout",
+        "session1Details": {
+            "sessionDate": "Mar 18,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Mar 18,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Mar 19,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Mar 19,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Mar 20,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+
+    {
+        "id": 2,
+        "nameOfRace": "SAUDI ARABIAN \nGRAND PRIX",
+        "layoutOfRace": "saudiArabiaLayout",
+        "session1Details": {
+            "sessionDate": "Mar 25,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Mar 25,",
+            "sessionTime": "22:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Mar 26,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Mar 26,",
+            "sessionTime": "22:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Mar 27,",
+            "sessionTime": "22:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+
+    {
+        "id": 3,
+        "nameOfRace": "AUSTRALIAN GRAND \nPRIX",
+        "layoutOfRace": "australiaLayout",
+        "session1Details": {
+            "sessionDate": "Apr 8,",
+            "sessionTime": "08:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Apr 8,",
+            "sessionTime": "11:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Apr 9,",
+            "sessionTime": "08:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Apr 9,",
+            "sessionTime": "11:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Apr 10,",
+            "sessionTime": "10:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 4,
+        "nameOfRace": "EMILIA ROMAGNA \nGRAND PRIX",
+        "layoutOfRace": "emiliaRomagnaLayout",
+        "session1Details": {
+            "sessionDate": "Apr 22,",
+            "sessionTime": "17:00 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Apr 22,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session3Details": {
+            "sessionDate": "Apr 23,",
+            "sessionTime": "16:00 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session4Details": {
+            "sessionDate": "Apr 23,",
+            "sessionTime": "20:00 IST",
+            "sessionIcon": "flag",
+            "sessionName": "SPRINT"
+        },
+        "session5Details": {
+            "sessionDate": "Apr 24,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 5,
+        "nameOfRace": "MIAMI GRAND \nPRIX",
+        "layoutOfRace": "miamiLayout",
+        "session1Details": {
+            "sessionDate": "May 7,",
+            "sessionTime": "00:00 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "May 7,",
+            "sessionTime": "03:00 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "May 7,",
+            "sessionTime": "22:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "May 8,",
+            "sessionTime": "01:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "May 9,",
+            "sessionTime": "01:00 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 6,
+        "nameOfRace": "SPANISH GRAND \nPRIX",
+        "layoutOfRace": "spainLayout",
+        "session1Details": {
+            "sessionDate": "May 20,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "May 20,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "May 21,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "May 21,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "May 22,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 7,
+        "nameOfRace": "MONACO GRAND \nPRIX",
+        "layoutOfRace": "monacoLayout",
+        "session1Details": {
+            "sessionDate": "May 27,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "May 27,",
+            "sessionTime": "22:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "May 28,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "May 28,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "May 29,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 8,
+        "nameOfRace": "AZERBAIJAN GRAND \nPRIX",
+        "layoutOfRace": "azerbaijanLayout",
+        "session1Details": {
+            "sessionDate": "Jun 10,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Jun 10,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Jun 11,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Jun 11,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Jun 12,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 9,
+        "nameOfRace": "CANADIAN GRAND \nPRIX",
+        "layoutOfRace": "canadaLayout",
+        "session1Details": {
+            "sessionDate": "Jun 17,",
+            "sessionTime": "23:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Jun 18,",
+            "sessionTime": "02:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Jun 18,",
+            "sessionTime": "22:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Jun 19,",
+            "sessionTime": "01:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Jun 19,",
+            "sessionTime": "23:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 10,
+        "nameOfRace": "BRITISH GRAND \nPRIX",
+        "layoutOfRace": "UKLayout",
+        "session1Details": {
+            "sessionDate": "Jul 1,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Jul 1,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Jul 2,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Jul 2,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Jul 3,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 11,
+        "nameOfRace": "AUSTRIAN GRAND \nPRIX",
+        "layoutOfRace": "austriaLayout",
+        "session1Details": {
+            "sessionDate": "Jul 8,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Jul 8,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session3Details": {
+            "sessionDate": "Jul 9,",
+            "sessionTime": "16:00 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session4Details": {
+            "sessionDate": "Jul 9,",
+            "sessionTime": "20:00 IST",
+            "sessionIcon": "flag",
+            "sessionName": "SPRINT"
+        },
+        "session5Details": {
+            "sessionDate": "Jul 10,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 12,
+        "nameOfRace": "FRENCH GRAND \nPRIX",
+        "layoutOfRace": "franceLayout",
+        "session1Details": {
+            "sessionDate": "Jul 22,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Jul 22,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Jul 23,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Jul 23,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Jul 24,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 13,
+        "nameOfRace": " HUNGARIAN GRAND \nPRIX",
+        "layoutOfRace": "hungaryLayout",
+        "session1Details": {
+            "sessionDate": "Jul 29,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Jul 29,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Jul 30,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Jul 30,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Jul 31,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 14,
+        "nameOfRace": "BELGIAN GRAND \nPRIX",
+        "layoutOfRace": "belgiumLayout",
+        "session1Details": {
+            "sessionDate": "Aug 26,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Aug 26,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Aug 27,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Aug 27,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Aug 28,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 15,
+        "nameOfRace": "DUTCH GRAND \nPRIX",
+        "layoutOfRace": "netherlandsLayout",
+        "session1Details": {
+            "sessionDate": "Sep 2,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Sep 2,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Sep 3,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Sep 3,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Sep 4,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 16,
+        "nameOfRace": "ITALIAN GRAND \nPRIX",
+        "layoutOfRace": "italyLayout",
+        "session1Details": {
+            "sessionDate": "Sep 9,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Sep 9,",
+            "sessionTime": "20:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Sep 10,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Sep 10,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Sep 11,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 17,
+        "nameOfRace": "SINGAPORE GRAND \nPRIX",
+        "layoutOfRace": "singaporeLayout",
+        "session1Details": {
+            "sessionDate": "Sep 30,",
+            "sessionTime": "15:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Sep 30,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Oct 1,",
+            "sessionTime": "15:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Oct 1,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Oct 2,",
+            "sessionTime": "17:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 18,
+        "nameOfRace": "JAPANESE GRAND \nPRIX",
+        "layoutOfRace": "japanLayout",
+        "session1Details": {
+            "sessionDate": "Oct 7,",
+            "sessionTime": "09:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Oct 7,",
+            "sessionTime": "12:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Oct 8,",
+            "sessionTime": "09:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Oct 8,",
+            "sessionTime": "12:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Oct 9,",
+            "sessionTime": "10:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 19,
+        "nameOfRace": "UNITED STATES \nGRAND PRIX",
+        "layoutOfRace": "USALayout",
+        "session1Details": {
+            "sessionDate": "Oct 22,",
+            "sessionTime": "00:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Oct 22,",
+            "sessionTime": "03:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Oct 23,",
+            "sessionTime": "00:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Oct 23,",
+            "sessionTime": "03:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Oct 24,",
+            "sessionTime": "00:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 20,
+        "nameOfRace": "MEXICAN GRAND \nPRIX",
+        "layoutOfRace": "mexicoLayout",
+        "session1Details": {
+            "sessionDate": "Oct 28,",
+            "sessionTime": "23:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Oct 29,",
+            "sessionTime": "02:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Oct 29,",
+            "sessionTime": "22:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Oct 30,",
+            "sessionTime": "01:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Oct 31,",
+            "sessionTime": "01:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 21,
+        "nameOfRace": "BRAZILIAN GRAND \nPRIX",
+        "layoutOfRace": "brazilLayout",
+        "session1Details": {
+            "sessionDate": "Nov 11,",
+            "sessionTime": "21:00 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Nov 12,",
+            "sessionTime": "00:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session3Details": {
+            "sessionDate": "Nov 12,",
+            "sessionTime": "21:00 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session4Details": {
+            "sessionDate": "Nov 13,",
+            "sessionTime": "01:00 IST",
+            "sessionIcon": "flag",
+            "sessionName": "SPRINT"
+        },
+        "session5Details": {
+            "sessionDate": "Nov 13,",
+            "sessionTime": "23:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    },
+    
+    {
+        "id": 22,
+        "nameOfRace": "ABU DHABI \nGRAND PRIX",
+        "layoutOfRace": "abuDhabiLayout",
+        "session1Details": {
+            "sessionDate": "Nov 18,",
+            "sessionTime": "15:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 1"
+        },
+        "session2Details": {
+            "sessionDate": "Nov 18,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 2"
+        },
+        "session3Details": {
+            "sessionDate": "Nov 19,",
+            "sessionTime": "16:30 IST",
+            "sessionIcon": "gear",
+            "sessionName": "PRACTICE 3"
+        },
+        "session4Details": {
+            "sessionDate": "Nov 19,",
+            "sessionTime": "19:30 IST",
+            "sessionIcon": "stopwatch",
+            "sessionName": "QUALIFYING"
+        },
+        "session5Details": {
+            "sessionDate": "Nov 20,",
+            "sessionTime": "18:30 IST",
+            "sessionIcon": "flag.fill",
+            "sessionName": "RACE"
+        }
+    }
+]

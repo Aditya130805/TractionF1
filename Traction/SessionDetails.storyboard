@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SessionDetailsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SessionDetailsVC" id="Y6W-OH-hqX" userLabel="SessionDetailsVC" customClass="SessionDetailsViewController" customModule="Traction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1378"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="rD9-or-e34">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1378"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpE-IK-iAX">
+                                <rect key="frame" x="10" y="54" width="37" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dtu-fq-ba6" kind="unwind" identifier="" unwindAction="unwindToSecondViewController:" id="YPQ-rA-q5y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAHRAIN GRAND  PRIX (FP1)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7V-p6-4yS">
+                                <rect key="frame" x="104.5" y="49" width="205" height="68"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-s1-0KO" userLabel="Weather">
+                                <rect key="frame" x="18" y="142" width="378" height="140"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nlF-UU-Ebd" userLabel="WeatherContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="140"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6J-sJ-us6" userLabel="forSpacing">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Xvx-Wz-7yE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Rig-yi-iOA" userLabel="Weather">
+                                                <rect key="frame" x="0.0" y="20" width="183" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 - 23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww9-3E-iH5" userLabel="allInfo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="48.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air Temp (°C)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-Oo-T1v" userLabel="subTitle">
+                                                        <rect key="frame" x="0.0" y="48.5" width="183" height="32.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Light" family="Noto Sans Myanmar" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDE-7p-nN5" userLabel="mainTitle">
+                                                        <rect key="frame" x="0.0" y="81" width="183" height="19"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-8I-EM4" userLabel="forSpacing">
+                                                <rect key="frame" x="0.0" y="120" width="183" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="E3F-P0-FhT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="ldf-Gf-rSy"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vMP-fE-pT6" userLabel="WeatherContainer">
+                                        <rect key="frame" x="195" y="0.0" width="183" height="140"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRM-yD-UzG" userLabel="forSpacing">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Oop-Fd-ESe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-QM-3nx" userLabel="Weather">
+                                                <rect key="frame" x="0.0" y="20" width="183" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40-50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sB-TD-Wag" userLabel="allInfo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="48.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind speed (kph)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyr-og-CFY" userLabel="subTitle">
+                                                        <rect key="frame" x="0.0" y="48.5" width="183" height="32.5"/>
+                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Light" family="Noto Sans Myanmar" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaO-zi-y1a" userLabel="mainTitle">
+                                                        <rect key="frame" x="0.0" y="81" width="183" height="19"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ty-uS-arh" userLabel="forSpacing">
+                                                <rect key="frame" x="0.0" y="120" width="183" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="pxl-Lq-3Dj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                        <gestureRecognizers/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="QX4-C7-Yr6" userLabel="Rain">
+                                <rect key="frame" x="18" y="296" width="378" height="39"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-sg-FQX" userLabel="RainIcon">
+                                        <rect key="frame" x="0.0" y="2" width="38" height="36.5"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <imageReference key="image" image="cloud.rain.fill" catalog="system" symbolScale="small"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rain?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAW-hV-d1b" userLabel="RainLabel">
+                                        <rect key="frame" x="73" y="0.0" width="132" height="39"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8CN-fN-OZG" userLabel="RainYesOrNo">
+                                        <rect key="frame" x="240" y="0.5" width="138" height="38"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="medium"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Nfa-iA-PXz"/>
+                                </constraints>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6w-vI-0hT">
+                                <rect key="frame" x="0.0" y="349" width="414" height="1029"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ze-bP-lgL" userLabel="PositionsView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ayk-SS-YmW">
+                                                <rect key="frame" x="18" y="0.0" width="378" height="1000"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gnx-ph-ah2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XZX-YF-hLu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-PA-4Gb" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="SIN-Sv-Kxg" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7be-aH-ApJ" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwV-E6-Xle" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="deu-BZ-VyR">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="               " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-tx-ma1" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE2-bB-Khn" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MzL-32-Zvc">
+                                                        <rect key="frame" x="0.0" y="50.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HM4-rg-2lH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfi-dZ-Do2" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="nnl-l6-9Zk" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BI9-Wk-ifR" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckr-JM-xxc" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bfk-ld-Rmp">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:37:33.584" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik7-oO-3bv" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icj-oc-N4T" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="164.5" y="0.0" width="24.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zxw-Xx-3Hg">
+                                                        <rect key="frame" x="0.0" y="101" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-qK-aGU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6j-9h-ZM5" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="mFz-wU-B6R" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYi-zF-9oj" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tb-MV-6qn" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bO3-Ak-WdK">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqD-MY-AxF" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huo-Mu-2W5" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Fv-va-zBy">
+                                                        <rect key="frame" x="0.0" y="151.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3bQ-9a-Uct">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfg-FL-smH" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="vlo-hO-k2f" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yu-6e-huS" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwo-Xy-dOJ" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-tN-6gi">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0G-HY-1hq" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baO-FL-7KH" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-Vj-naA">
+                                                        <rect key="frame" x="0.0" y="202" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t63-Ny-s8z">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VO-Af-PUP" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="iQ7-Uj-mWw" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-8A-KLP" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wP-vI-Hdm" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I8J-3L-y24">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPC-Jl-cHm" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDA-xm-96B" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uXJ-oC-PPs">
+                                                        <rect key="frame" x="0.0" y="252.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dW5-Dd-HRP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-DJ-A3R" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="5hU-Ue-ofh" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzZ-dr-5dC" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0E7-rk-RNj" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lxh-J5-slK">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ao-Ay-Psc" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM4-zr-Yx7" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6sT-87-kR2">
+                                                        <rect key="frame" x="0.0" y="303" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jP4-7z-1FD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvt-jr-zuL" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="cux-Rs-6ch" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6w-RS-TgT" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVo-Bk-lIH" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jB7-T5-gZI">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69x-pD-9sO" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thr-Dj-KbU" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-aZ-cg5">
+                                                        <rect key="frame" x="0.0" y="353.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aAi-nB-25G">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8X-89-oyU" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="3FV-df-7fy" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKf-64-2SQ" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg8-iA-qS0" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bG7-Aj-pYw">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IH-u3-CVR" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3I-yZ-1hb" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pgo-EO-gBe">
+                                                        <rect key="frame" x="0.0" y="404" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ole-Tn-8NF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvj-z2-Ged" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="lho-Dj-7fc" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyL-83-3Is" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-in-b1B" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-kQ-UIR">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dks-1C-r0m" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-PP-KlV" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-By-Qjf">
+                                                        <rect key="frame" x="0.0" y="454.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tcR-tE-gPv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aD8-pj-Xqb" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="4V8-72-CnK" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8S-mK-bc9" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-U3-8ih" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5L5-r9-PVJ">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyu-PP-CY7" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kez-2R-T4Z" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fhG-ly-Cqu">
+                                                        <rect key="frame" x="0.0" y="505" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xne-f2-6Ee">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEU-oz-cDj" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="qoN-M1-CJA" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="an0-CU-MD2" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agA-Rq-RwH" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CgJ-Tj-4lw">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIS-t5-qjz" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyt-id-Jk9" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n3W-VJ-PaC">
+                                                        <rect key="frame" x="0.0" y="555.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v1L-CV-yIf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTK-IU-dcC" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="YeK-Wp-DHl" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvN-xz-sdC" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djb-Ol-fwx" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="X41-Kl-8bL">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akE-Ke-CtI" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdz-8L-X2p" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xAU-S8-mNW">
+                                                        <rect key="frame" x="0.0" y="606" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vR0-Lg-gWq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh3-I0-kOr" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="kr9-b1-AN1" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq9-6e-7Dq" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="II7-ZY-iNo" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XPm-bA-CLv">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5f-hL-sAN" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRs-xM-DEF" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="X28-09-aVs">
+                                                        <rect key="frame" x="0.0" y="656.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-nl-mY0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-fh-rqi" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="GlV-nC-6Bf" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fu-Qi-QfA" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWh-6F-qwg" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I62-66-36q">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhO-DK-uRl" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-w8-0el" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Waf-da-oeh">
+                                                        <rect key="frame" x="0.0" y="707" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bGS-9K-vlk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqX-EI-lOk" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="UFd-7V-lh9" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3B-um-lmv" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-vx-m7M" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yTv-WE-lSK">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH6-Rp-sTG" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK8-er-NQZ" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qxF-fe-gtM">
+                                                        <rect key="frame" x="0.0" y="757.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RsO-XB-nPs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeZ-fb-TrE" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="L7j-Tw-dkh" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lf-WQ-akm" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-Vc-QsW" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-JK-JLz">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyl-AL-9Tt" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvS-LR-wlA" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JJq-KN-Isu">
+                                                        <rect key="frame" x="0.0" y="808" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gMG-F4-Fr0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0He-tC-P67" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="yOY-Oh-P5o" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKm-XT-JZe" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eA-PU-dbH" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RRs-om-qcY">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIo-i5-bDb" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvr-Ts-cG7" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="efT-Gd-8EH">
+                                                        <rect key="frame" x="0.0" y="858.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uK4-lj-COT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJA-ag-zcX" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="hHm-ku-RPe" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnR-7r-NCz" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1D-Y6-835" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vAP-ST-RCp">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSF-i3-X17" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6B-Fq-bp2" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MQy-fR-qTs">
+                                                        <rect key="frame" x="0.0" y="909" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lOd-ij-eTt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkS-DM-9Ic" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="vi1-N7-0Tt" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-6u-fq2" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXn-jg-z8m" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fif-en-szN">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgp-Bu-x7l" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsT-39-qB6" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mhe-Kr-Js0">
+                                                        <rect key="frame" x="0.0" y="959.5" width="378" height="40.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9h1-3a-dub">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liv-K0-NqF" userLabel="position">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferrariColor" translatesAutoresizingMaskIntoConstraints="NO" id="mUR-ZO-4hb" userLabel="teamColor">
+                                                                        <rect key="frame" x="47.5" y="0.0" width="47" height="40.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsg-QG-dLS" userLabel="driverName">
+                                                                        <rect key="frame" x="94.5" y="0.0" width="47.5" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ih-MS-UBO" userLabel="driverNumber">
+                                                                        <rect key="frame" x="142" y="0.0" width="47" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xka-PD-R4v">
+                                                                <rect key="frame" x="189" y="0.0" width="189" height="40.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+36.950" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4J-RS-1lQ" userLabel="driverTimeDifference">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNL-Lc-k8L" userLabel="equalStabilized">
+                                                                        <rect key="frame" x="154" y="0.0" width="35" height="40.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1000" id="qyU-9x-vLs"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ayk-SS-YmW" firstAttribute="leading" secondItem="5Ze-bP-lgL" secondAttribute="leading" constant="18" id="4ZB-0p-3Oo"/>
+                                            <constraint firstAttribute="height" constant="1000" id="EKv-RW-YBC"/>
+                                            <constraint firstAttribute="bottom" secondItem="ayk-SS-YmW" secondAttribute="bottom" id="HT8-Jy-2Kk"/>
+                                            <constraint firstItem="ayk-SS-YmW" firstAttribute="top" secondItem="5Ze-bP-lgL" secondAttribute="top" id="gQE-m8-G8f"/>
+                                            <constraint firstAttribute="trailing" secondItem="ayk-SS-YmW" secondAttribute="trailing" constant="18" id="qZU-Db-gkw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Ze-bP-lgL" firstAttribute="top" secondItem="N6w-vI-0hT" secondAttribute="top" id="Ggg-i0-6kq"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Ze-bP-lgL" secondAttribute="trailing" id="H3L-Zi-wdG"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Ze-bP-lgL" secondAttribute="bottom" id="O6x-H8-PoH"/>
+                                    <constraint firstItem="5Ze-bP-lgL" firstAttribute="leading" secondItem="N6w-vI-0hT" secondAttribute="leading" id="zIH-6H-yOo"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N6w-vI-0hT" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="527-Oy-TH7"/>
+                            <constraint firstItem="8OY-s1-0KO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="63t-BE-kV7"/>
+                            <constraint firstItem="QX4-C7-Yr6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="758-NC-u2H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8OY-s1-0KO" secondAttribute="trailing" constant="18" id="7tf-m5-DcC"/>
+                            <constraint firstItem="qpE-IK-iAX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="CAk-GQ-PRi"/>
+                            <constraint firstItem="O7V-p6-4yS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="CRX-qt-BUD"/>
+                            <constraint firstItem="N6w-vI-0hT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="MCN-me-uYn"/>
+                            <constraint firstItem="QX4-C7-Yr6" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SHN-YP-QSM"/>
+                            <constraint firstItem="8OY-s1-0KO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="U3P-ZX-w2e"/>
+                            <constraint firstItem="O7V-p6-4yS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Vky-Mq-kAZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QX4-C7-Yr6" secondAttribute="trailing" constant="18" id="XGZ-g1-xqY"/>
+                            <constraint firstItem="N6w-vI-0hT" firstAttribute="top" secondItem="QX4-C7-Yr6" secondAttribute="bottom" constant="14" id="XeU-Jb-X6I"/>
+                            <constraint firstItem="rD9-or-e34" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="cTY-ZX-51a"/>
+                            <constraint firstItem="rD9-or-e34" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="dkb-3F-kmR"/>
+                            <constraint firstItem="qpE-IK-iAX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="emF-qh-eBi"/>
+                            <constraint firstAttribute="bottom" secondItem="rD9-or-e34" secondAttribute="bottom" id="goc-DE-Qrl"/>
+                            <constraint firstItem="5Ze-bP-lgL" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="rF5-zr-nm6"/>
+                            <constraint firstItem="rD9-or-e34" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="vQC-X4-K8d"/>
+                            <constraint firstAttribute="bottom" secondItem="N6w-vI-0hT" secondAttribute="bottom" id="yFR-Va-6ht"/>
+                            <constraint firstItem="QX4-C7-Yr6" firstAttribute="top" secondItem="8OY-s1-0KO" secondAttribute="bottom" constant="14" id="ygu-5d-Z1g"/>
+                            <constraint firstItem="8OY-s1-0KO" firstAttribute="top" secondItem="O7V-p6-4yS" secondAttribute="bottom" constant="25" id="zqd-cD-G8b"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1378"/>
+                    <connections>
+                        <outlet property="airTemperature" destination="ww9-3E-iH5" id="7T9-Wf-v4x"/>
+                        <outlet property="didItRain" destination="8CN-fN-OZG" id="xw8-hD-DR0"/>
+                        <outlet property="raceSessionName" destination="O7V-p6-4yS" id="cFn-HD-Xjz"/>
+                        <outlet property="windSpeed" destination="2sB-TD-Wag" id="GBK-8W-mUl"/>
+                        <outletCollection property="teamColors" destination="SIN-Sv-Kxg" collectionClass="NSMutableArray" id="05W-vs-Pws"/>
+                        <outletCollection property="teamColors" destination="nnl-l6-9Zk" collectionClass="NSMutableArray" id="fSP-9G-0Rh"/>
+                        <outletCollection property="teamColors" destination="mFz-wU-B6R" collectionClass="NSMutableArray" id="xYZ-nX-6ut"/>
+                        <outletCollection property="teamColors" destination="vlo-hO-k2f" collectionClass="NSMutableArray" id="baf-Cc-88n"/>
+                        <outletCollection property="teamColors" destination="iQ7-Uj-mWw" collectionClass="NSMutableArray" id="AhD-9N-S4X"/>
+                        <outletCollection property="teamColors" destination="5hU-Ue-ofh" collectionClass="NSMutableArray" id="QM9-9I-J8i"/>
+                        <outletCollection property="teamColors" destination="cux-Rs-6ch" collectionClass="NSMutableArray" id="HlW-3T-qsA"/>
+                        <outletCollection property="teamColors" destination="3FV-df-7fy" collectionClass="NSMutableArray" id="uyh-oP-5e6"/>
+                        <outletCollection property="teamColors" destination="lho-Dj-7fc" collectionClass="NSMutableArray" id="KBS-Z0-hcb"/>
+                        <outletCollection property="teamColors" destination="4V8-72-CnK" collectionClass="NSMutableArray" id="bLY-p3-MHa"/>
+                        <outletCollection property="teamColors" destination="qoN-M1-CJA" collectionClass="NSMutableArray" id="HRH-Gt-07A"/>
+                        <outletCollection property="teamColors" destination="YeK-Wp-DHl" collectionClass="NSMutableArray" id="zA1-A2-1nT"/>
+                        <outletCollection property="teamColors" destination="kr9-b1-AN1" collectionClass="NSMutableArray" id="Y6R-gq-klT"/>
+                        <outletCollection property="teamColors" destination="GlV-nC-6Bf" collectionClass="NSMutableArray" id="zxN-EA-51q"/>
+                        <outletCollection property="teamColors" destination="UFd-7V-lh9" collectionClass="NSMutableArray" id="ZF5-yx-G93"/>
+                        <outletCollection property="teamColors" destination="L7j-Tw-dkh" collectionClass="NSMutableArray" id="s32-wr-i7d"/>
+                        <outletCollection property="teamColors" destination="yOY-Oh-P5o" collectionClass="NSMutableArray" id="giJ-hM-QEb"/>
+                        <outletCollection property="teamColors" destination="hHm-ku-RPe" collectionClass="NSMutableArray" id="w7R-GS-W7I"/>
+                        <outletCollection property="teamColors" destination="vi1-N7-0Tt" collectionClass="NSMutableArray" id="aFs-Yi-32I"/>
+                        <outletCollection property="teamColors" destination="mUR-ZO-4hb" collectionClass="NSMutableArray" id="Gcz-ob-eS2"/>
+                        <outletCollection property="driverNames" destination="7be-aH-ApJ" collectionClass="NSMutableArray" id="1Xg-xI-5yv"/>
+                        <outletCollection property="driverNames" destination="BI9-Wk-ifR" collectionClass="NSMutableArray" id="wd5-gI-4md"/>
+                        <outletCollection property="driverNames" destination="uYi-zF-9oj" collectionClass="NSMutableArray" id="g8z-gX-7Fu"/>
+                        <outletCollection property="driverNames" destination="1Yu-6e-huS" collectionClass="NSMutableArray" id="Skb-pN-Z7q"/>
+                        <outletCollection property="driverNames" destination="yfO-8A-KLP" collectionClass="NSMutableArray" id="idX-M5-P2d"/>
+                        <outletCollection property="driverNames" destination="DzZ-dr-5dC" collectionClass="NSMutableArray" id="li0-bu-dTJ"/>
+                        <outletCollection property="driverNames" destination="m6w-RS-TgT" collectionClass="NSMutableArray" id="flD-Ib-KeI"/>
+                        <outletCollection property="driverNames" destination="WKf-64-2SQ" collectionClass="NSMutableArray" id="7Hd-fB-CxG"/>
+                        <outletCollection property="driverNames" destination="gyL-83-3Is" collectionClass="NSMutableArray" id="UJT-Dl-hpO"/>
+                        <outletCollection property="driverNames" destination="h8S-mK-bc9" collectionClass="NSMutableArray" id="yX6-5B-qLB"/>
+                        <outletCollection property="driverNames" destination="an0-CU-MD2" collectionClass="NSMutableArray" id="Kbj-At-AeY"/>
+                        <outletCollection property="driverNames" destination="EvN-xz-sdC" collectionClass="NSMutableArray" id="v8S-zY-ZG7"/>
+                        <outletCollection property="driverNames" destination="vq9-6e-7Dq" collectionClass="NSMutableArray" id="wQP-7Y-0XB"/>
+                        <outletCollection property="driverNames" destination="8fu-Qi-QfA" collectionClass="NSMutableArray" id="nQS-Eb-kwe"/>
+                        <outletCollection property="driverNames" destination="Y3B-um-lmv" collectionClass="NSMutableArray" id="ue7-Dj-5F4"/>
+                        <outletCollection property="driverNames" destination="7Lf-WQ-akm" collectionClass="NSMutableArray" id="XFL-b7-0we"/>
+                        <outletCollection property="driverNames" destination="uKm-XT-JZe" collectionClass="NSMutableArray" id="p4T-Rb-ZsQ"/>
+                        <outletCollection property="driverNames" destination="PnR-7r-NCz" collectionClass="NSMutableArray" id="V2L-VS-a0L"/>
+                        <outletCollection property="driverNames" destination="dqi-6u-fq2" collectionClass="NSMutableArray" id="otb-4l-2tF"/>
+                        <outletCollection property="driverNames" destination="Fsg-QG-dLS" collectionClass="NSMutableArray" id="cA0-R1-Roa"/>
+                        <outletCollection property="driverNumbers" destination="LwV-E6-Xle" collectionClass="NSMutableArray" id="sSr-si-838"/>
+                        <outletCollection property="driverNumbers" destination="Ckr-JM-xxc" collectionClass="NSMutableArray" id="4Tj-uo-mBj"/>
+                        <outletCollection property="driverNumbers" destination="7Tb-MV-6qn" collectionClass="NSMutableArray" id="tVX-UG-Qoy"/>
+                        <outletCollection property="driverNumbers" destination="cwo-Xy-dOJ" collectionClass="NSMutableArray" id="lrz-k8-gzv"/>
+                        <outletCollection property="driverNumbers" destination="3wP-vI-Hdm" collectionClass="NSMutableArray" id="sMM-0O-lBp"/>
+                        <outletCollection property="driverNumbers" destination="0E7-rk-RNj" collectionClass="NSMutableArray" id="UAf-JD-2Nf"/>
+                        <outletCollection property="driverNumbers" destination="vVo-Bk-lIH" collectionClass="NSMutableArray" id="mch-vE-6UD"/>
+                        <outletCollection property="driverNumbers" destination="Tg8-iA-qS0" collectionClass="NSMutableArray" id="QPx-K7-Cx4"/>
+                        <outletCollection property="driverNumbers" destination="1fh-in-b1B" collectionClass="NSMutableArray" id="KIH-3g-7uJ"/>
+                        <outletCollection property="driverNumbers" destination="OdM-U3-8ih" collectionClass="NSMutableArray" id="Rht-5I-AQ7"/>
+                        <outletCollection property="driverNumbers" destination="agA-Rq-RwH" collectionClass="NSMutableArray" id="jbr-rv-zcq"/>
+                        <outletCollection property="driverNumbers" destination="djb-Ol-fwx" collectionClass="NSMutableArray" id="ZVf-eh-Y0c"/>
+                        <outletCollection property="driverNumbers" destination="II7-ZY-iNo" collectionClass="NSMutableArray" id="6D4-WX-Wjr"/>
+                        <outletCollection property="driverNumbers" destination="WWh-6F-qwg" collectionClass="NSMutableArray" id="5pp-Do-NAX"/>
+                        <outletCollection property="driverNumbers" destination="7Xq-vx-m7M" collectionClass="NSMutableArray" id="CGo-Ch-xIt"/>
+                        <outletCollection property="driverNumbers" destination="qoj-Vc-QsW" collectionClass="NSMutableArray" id="wgr-dx-B7Z"/>
+                        <outletCollection property="driverNumbers" destination="0eA-PU-dbH" collectionClass="NSMutableArray" id="L7a-gA-gaB"/>
+                        <outletCollection property="driverNumbers" destination="H1D-Y6-835" collectionClass="NSMutableArray" id="VkP-W0-B5W"/>
+                        <outletCollection property="driverNumbers" destination="vXn-jg-z8m" collectionClass="NSMutableArray" id="fvv-fV-F7m"/>
+                        <outletCollection property="driverNumbers" destination="5Ih-MS-UBO" collectionClass="NSMutableArray" id="bTB-0E-SJ0"/>
+                        <outletCollection property="allTimeDifferences" destination="hUT-tx-ma1" collectionClass="NSMutableArray" id="zaI-Wz-T8I"/>
+                        <outletCollection property="allTimeDifferences" destination="ik7-oO-3bv" collectionClass="NSMutableArray" id="YIB-mQ-BBL"/>
+                        <outletCollection property="allTimeDifferences" destination="xqD-MY-AxF" collectionClass="NSMutableArray" id="aza-Wr-Kt8"/>
+                        <outletCollection property="allTimeDifferences" destination="c0G-HY-1hq" collectionClass="NSMutableArray" id="vgC-JL-3b7"/>
+                        <outletCollection property="allTimeDifferences" destination="KPC-Jl-cHm" collectionClass="NSMutableArray" id="ZTN-D2-VQN"/>
+                        <outletCollection property="allTimeDifferences" destination="8ao-Ay-Psc" collectionClass="NSMutableArray" id="Cwc-lA-PZD"/>
+                        <outletCollection property="allTimeDifferences" destination="69x-pD-9sO" collectionClass="NSMutableArray" id="AqB-gP-53k"/>
+                        <outletCollection property="allTimeDifferences" destination="9IH-u3-CVR" collectionClass="NSMutableArray" id="36v-Ua-QgV"/>
+                        <outletCollection property="allTimeDifferences" destination="dks-1C-r0m" collectionClass="NSMutableArray" id="oYc-Se-ybe"/>
+                        <outletCollection property="allTimeDifferences" destination="Wyu-PP-CY7" collectionClass="NSMutableArray" id="jR9-wk-YZR"/>
+                        <outletCollection property="allTimeDifferences" destination="oIS-t5-qjz" collectionClass="NSMutableArray" id="atX-xc-Ka5"/>
+                        <outletCollection property="allTimeDifferences" destination="akE-Ke-CtI" collectionClass="NSMutableArray" id="g1z-Qy-Jb4"/>
+                        <outletCollection property="allTimeDifferences" destination="T5f-hL-sAN" collectionClass="NSMutableArray" id="Rjl-xB-q9r"/>
+                        <outletCollection property="allTimeDifferences" destination="KhO-DK-uRl" collectionClass="NSMutableArray" id="dhW-fc-xIw"/>
+                        <outletCollection property="allTimeDifferences" destination="OH6-Rp-sTG" collectionClass="NSMutableArray" id="jaB-ZW-0uI"/>
+                        <outletCollection property="allTimeDifferences" destination="Wyl-AL-9Tt" collectionClass="NSMutableArray" id="m9b-2f-Nxt"/>
+                        <outletCollection property="allTimeDifferences" destination="VIo-i5-bDb" collectionClass="NSMutableArray" id="JWJ-6D-pRl"/>
+                        <outletCollection property="allTimeDifferences" destination="RSF-i3-X17" collectionClass="NSMutableArray" id="XrE-32-fF4"/>
+                        <outletCollection property="allTimeDifferences" destination="lgp-Bu-x7l" collectionClass="NSMutableArray" id="Nhv-ff-Pbe"/>
+                        <outletCollection property="allTimeDifferences" destination="g4J-RS-1lQ" collectionClass="NSMutableArray" id="8cI-ZG-qqK"/>
+                        <outletCollection property="singleSessionBanners" destination="Gnx-ph-ah2" collectionClass="NSMutableArray" id="1aR-sA-Lhs"/>
+                        <outletCollection property="singleSessionBanners" destination="MzL-32-Zvc" collectionClass="NSMutableArray" id="gCY-CM-fbC"/>
+                        <outletCollection property="singleSessionBanners" destination="Zxw-Xx-3Hg" collectionClass="NSMutableArray" id="oa7-dz-IOL"/>
+                        <outletCollection property="singleSessionBanners" destination="0Fv-va-zBy" collectionClass="NSMutableArray" id="M0w-dP-RdW"/>
+                        <outletCollection property="singleSessionBanners" destination="dYq-Vj-naA" collectionClass="NSMutableArray" id="JbY-YW-j9D"/>
+                        <outletCollection property="singleSessionBanners" destination="uXJ-oC-PPs" collectionClass="NSMutableArray" id="Epi-6m-9tQ"/>
+                        <outletCollection property="singleSessionBanners" destination="6sT-87-kR2" collectionClass="NSMutableArray" id="xmG-Ae-XpW"/>
+                        <outletCollection property="singleSessionBanners" destination="1pE-aZ-cg5" collectionClass="NSMutableArray" id="Oos-go-eBj"/>
+                        <outletCollection property="singleSessionBanners" destination="Pgo-EO-gBe" collectionClass="NSMutableArray" id="95D-nS-Csp"/>
+                        <outletCollection property="singleSessionBanners" destination="uhS-By-Qjf" collectionClass="NSMutableArray" id="dcR-1X-rBX"/>
+                        <outletCollection property="singleSessionBanners" destination="fhG-ly-Cqu" collectionClass="NSMutableArray" id="ahI-no-zPJ"/>
+                        <outletCollection property="singleSessionBanners" destination="n3W-VJ-PaC" collectionClass="NSMutableArray" id="1W1-N8-j7b"/>
+                        <outletCollection property="singleSessionBanners" destination="xAU-S8-mNW" collectionClass="NSMutableArray" id="VVR-n3-XFd"/>
+                        <outletCollection property="singleSessionBanners" destination="X28-09-aVs" collectionClass="NSMutableArray" id="OB6-bW-Dg8"/>
+                        <outletCollection property="singleSessionBanners" destination="Waf-da-oeh" collectionClass="NSMutableArray" id="7tW-Id-WKS"/>
+                        <outletCollection property="singleSessionBanners" destination="qxF-fe-gtM" collectionClass="NSMutableArray" id="gc0-YF-aey"/>
+                        <outletCollection property="singleSessionBanners" destination="JJq-KN-Isu" collectionClass="NSMutableArray" id="bsf-XD-xik"/>
+                        <outletCollection property="singleSessionBanners" destination="efT-Gd-8EH" collectionClass="NSMutableArray" id="Uu7-g8-Bil"/>
+                        <outletCollection property="singleSessionBanners" destination="MQy-fR-qTs" collectionClass="NSMutableArray" id="qej-6s-kQh"/>
+                        <outletCollection property="singleSessionBanners" destination="Mhe-Kr-Js0" collectionClass="NSMutableArray" id="wU3-N0-0We"/>
+                        <outletCollection property="extraDetailsBanners" destination="nlF-UU-Ebd" collectionClass="NSMutableArray" id="fAi-L3-ocw"/>
+                        <outletCollection property="extraDetailsBanners" destination="vMP-fE-pT6" collectionClass="NSMutableArray" id="gfH-Xp-t4d"/>
+                        <outletCollection property="extraDetailsBanners" destination="QX4-C7-Yr6" collectionClass="NSMutableArray" id="Y2I-eS-QOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dtu-fq-ba6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background2" width="1440" height="803"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="cloud.rain.fill" catalog="system" width="125" height="128"/>
+        <image name="ferrariColor" width="213" height="293"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

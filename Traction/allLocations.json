@@ -1,0 +1,331 @@
+[
+    {
+        "id": 1,
+        "circuitImg": "bahrainLayout",
+        "flagImg": "bahrain",
+        "countryName": "Bahrain",
+        "firstGrandPrix": 2004,
+        "circuitLength": 5.412,
+        "numberOfLaps": 57,
+        "raceDistance": 308.238,
+        "lapRecord": "1:31.447 - De La Rosa (2005)",
+        "whyCountry": "Given the nature of the track, race-goers in Bahrain have always got a decent chance of being treated to a 'duel in the desert' or three. Away from the race track, Bahrain, as you might expect, is a great place to catch some rays, with the 33-island archipelago kingdom featuring some jaw-dropping resorts. And if you want to do some racing yourself, the Bahrain International Karting Circuit, located right next to the track, is one of the world’s top karting facilities.",
+        "latitude": 26.0368,
+        "longitude": 50.5107
+    },
+
+    {
+        "id": 2,
+        "circuitImg": "saudiArabiaLayout",
+        "flagImg": "saudi",
+        "countryName": "Saudi Arabia",
+        "firstGrandPrix": 2021,
+        "circuitLength": 6.174,
+        "numberOfLaps": 50,
+        "raceDistance": 308.45,
+        "lapRecord": "1:30.734 - Lewis Hamilton (2021)",
+        "whyCountry": "The Saudi Arabian Grand Prix promises to be a sun-soaked festival of Formula 1, located on an idyllic stretch of the Kingdom’s coastline. The on-track action should be stunning, as the drivers get to grips with this rapid street track, while Jeddah itself will come alive as the city prepares to host F1 once again.",
+        "latitude": 21.6370,
+        "longitude": 39.1030
+    },
+    
+    {
+        "id": 3,
+        "circuitImg": "australiaLayout",
+        "flagImg": "australia",
+        "countryName": "Australia",
+        "firstGrandPrix": 1996,
+        "circuitLength": 5.303,
+        "numberOfLaps": 58,
+        "raceDistance": 307.574,
+        "lapRecord": "1:24.125 - Michael Schumacher (2004)",
+        "whyCountry": "Often found on lists of the world’s best cities, Melbourne is a blast all year round – and it only gets better when Formula 1 rolls into town. There are bars and restaurants aplenty, you’re right by the beach, while the race’s appearance at the start of Australia’s autumn means the temperatures should be peachy.",
+        "latitude": -37.8501,
+        "longitude": 144.9690
+    },
+    
+    {
+        "id": 4,
+        "circuitImg": "emiliaRomagnaLayout",
+        "flagImg": "italy",
+        "countryName": "Italy",
+        "firstGrandPrix": 1980,
+        "circuitLength": 4.909,
+        "numberOfLaps": 63,
+        "raceDistance": 309.049,
+        "lapRecord": "1:15.484 - Lewis Hamilton (2020)",
+        "whyCountry": "Like neighbouring Mugello, Imola is nestled in a fantastic part of the world, with the Tuscan hills to the south, the Adriatic beaches to the east and the gastronomic delights of cities like Bologna, Parma and Modena to the west – as well as the F1 mecca that is Ferrari’s HQ in nearby Maranello. There’s also no getting around the fact that a visit to Imola is an opportunity for F1 fans to pay their respects to Ayrton Senna and Roland Ratzenberger, who lost their lives at the 1994 San Marino Grand Prix.",
+        "latitude": 44.3443,
+        "longitude": 11.7195
+    },
+    
+    {
+        "id": 5,
+        "circuitImg": "miamiLayout",
+        "flagImg": "usa",
+        "countryName": "USA",
+        "firstGrandPrix": 2022,
+        "circuitLength": 5.412,
+        "numberOfLaps": 57,
+        "raceDistance": 308.326,
+        "lapRecord": "1:31.361 - Max Verstappen (2022)",
+        "whyCountry": "The Hard Rock Stadium knows how to put on a show – it has hosted six Super Bowls, two Baseball World Series and numerous rock concerts. Put it at the heart of a track designed to encourage close racing while meeting the highest safety standards and you have a sure-fire winner for spectators. Then there’s Miami itself – famed for its sandy beaches, art deco vibe, vibrant multiculturalism and rich sporting heritage, it’s an essential destination for those visiting the Sunshine State.",
+        "latitude": 25.9569,
+        "longitude": -80.2314
+    },
+    
+    {
+        "id": 6,
+        "circuitImg": "spainLayout",
+        "flagImg": "spain",
+        "countryName": "Spain",
+        "firstGrandPrix": 1991,
+        "circuitLength": 4.655,
+        "numberOfLaps": 66,
+        "raceDistance": 307.104,
+        "lapRecord": "1:18.441 - Daniel Ricciardo (2018)",
+        "whyCountry": "You don’t need us to tell you that Barcelona is one of the world’s great cities, even if we just sort of did. Food, culture, beaches – it’s all there, making a Spanish Grand Prix holiday a properly attractive proposition.",
+        "latitude": 41.5685,
+        "longitude": 2.2573
+    },
+    
+    {
+        "id": 7,
+        "circuitImg": "monacoLayout",
+        "flagImg": "monaco",
+        "countryName": "Monaco",
+        "firstGrandPrix": 1950,
+        "circuitLength": 3.337,
+        "numberOfLaps": 78,
+        "raceDistance": 260.286,
+        "lapRecord": "1:14.260 - Max Verstappen (2018)",
+        "whyCountry": "A holiday on the French Riviera, plus the chance to watch Formula 1 cars pounding past places where Monegasques usually go to buy a pint of milk? It really is as fun as it sounds. On top of that, the chance to walk the track after a day’s hard lapping – or even enjoy your dinner on it at one of the terrasse bars – is not to be missed.",
+        "latitude": 43.7342,
+        "longitude": 7.4190
+    },
+    
+    {
+        "id": 8,
+        "circuitImg": "azerbaijanLayout",
+        "flagImg": "azerbaijan",
+        "countryName": "Azerbaijan",
+        "firstGrandPrix": 2016,
+        "circuitLength": 6.003,
+        "numberOfLaps": 51,
+        "raceDistance": 306.049,
+        "lapRecord": "1:43.009 - Charles Leclerc (2019)",
+        "whyCountry": "As with all city tracks, spectating at the Azerbaijan Grand Prix means that you’re right in the middle of the action when the cars get put back in their boxes. Baku itself is a buzzing city, while food is a key part of Azerbaijan’s culture, incorporating elements of Turkish and Middle Eastern cuisine – so eat up!",
+        "latitude": 40.3729,
+        "longitude": 49.8532
+    },
+    
+    {
+        "id": 9,
+        "circuitImg": "canadaLayout",
+        "flagImg": "canada",
+        "countryName": "Canada",
+        "firstGrandPrix": 1978,
+        "circuitLength": 4.361,
+        "numberOfLaps": 70,
+        "raceDistance": 305.270,
+        "lapRecord": "1:13.078 - Valtteri Bottas (2019)",
+        "whyCountry": "The Montrealais really embrace their Grand Prix weekend, with the charming city turning into an F1-loving party town in the week leading up to the race. For the Grand Prix itself, the leafy setting makes the Circuit Gilles-Villeneuve one of Formula 1’s most laidback venues.",
+        "latitude": 45.5040,
+        "longitude": -73.5270
+    },
+    
+    {
+        "id": 10,
+        "circuitImg": "UKLayout",
+        "flagImg": "uk",
+        "countryName": "UK",
+        "firstGrandPrix": 1950,
+        "circuitLength": 5.891,
+        "numberOfLaps": 52,
+        "raceDistance": 306.198,
+        "lapRecord": "1:27.369 - Hamilton (2019)",
+        "whyCountry": "It’s hard to stop the goose bumps from prickling as you walk around one of the great cathedrals of motorsport, while in terms of atmosphere, the British fans are always reliably raucous – this is the country that invented football (that’s soccer, mind), after all.",
+        "latitude": 52.0733,
+        "longitude": -1.0147
+    },
+    
+    {
+        "id": 11,
+        "circuitImg": "austriaLayout",
+        "flagImg": "austria",
+        "countryName": "Austria",
+        "firstGrandPrix": 1970,
+        "circuitLength": 4.318,
+        "numberOfLaps": 71,
+        "raceDistance": 306.452,
+        "lapRecord": "1:06.957 - Kimi Raikkonen (2018)",
+        "whyCountry": "Race tracks don’t come much more picturesque than the Red Bull Ring, set in an idyllic natural bowl in the Styrian mountains. That makes for a pleasant environment for a Grand Prix, while if you’re after tourist attractions to visit after the race, look no further than the museum in Graz dedicated to the city’s favourite son: Arnold Schwarzenegger.",
+        "latitude": 47.2185,
+        "longitude": 14.7588
+    },
+    
+    {
+        "id": 12,
+        "circuitImg": "franceLayout",
+        "flagImg": "france",
+        "countryName": "France",
+        "firstGrandPrix": 1971,
+        "circuitLength": 5.842,
+        "numberOfLaps": 53,
+        "raceDistance": 309.69,
+        "lapRecord": "1:32.740 - Sebastian Vettel (2019)",
+        "whyCountry": "Drive just 10km south of the circuit and you’ll find yourself on the French Riviera, one of the most revered coastlines in the world thanks to its beautiful beaches, pretty harbourside towns, great food and, if you fancy it, incredible local wines. Apart from the racing action, that’s why you go!",
+        "latitude": 43.2503,
+        "longitude": 5.7883
+    },
+    
+    {
+        "id": 13,
+        "circuitImg": "hungaryLayout",
+        "flagImg": "hungary",
+        "countryName": "Hungary",
+        "firstGrandPrix": 1986,
+        "circuitLength": 4.381,
+        "numberOfLaps": 70,
+        "raceDistance": 306.630,
+        "lapRecord": "1:17.103 - Max Verstappen (2019)",
+        "whyCountry": "Hungary in July is usually hot hot hot. The good news if you’re at the track, though, is that there’s a water park close by – the Mogyorodi Aquarena vizi szorakoztatopark – which should be a good place to cool off. Away from aqueous activities, the circuit is only 20km from Budapest, putting you close to one of Europe’s most fascinating, storied and lively city centres.",
+        "latitude": 47.5817,
+        "longitude": 19.2506
+    },
+    
+    {
+        "id": 14,
+        "circuitImg": "belgiumLayout",
+        "flagImg": "belgium",
+        "countryName": "Belgium",
+        "firstGrandPrix": 1950,
+        "circuitLength": 7.004,
+        "numberOfLaps": 44,
+        "raceDistance": 308.052,
+        "lapRecord": "1:46.286 - Valtteri Bottas (2018)",
+        "whyCountry": "What’s not to love about one of Europe’s classic tracks? Only the truly great drivers conquer Spa, with Ayrton Senna and Michael Schumacher among those to master this magical circuit. Add in the wonderful setting of the Ardennes forest and it’s no surprise that it’s a fan favourite, with a record 265,000 spectators turning out to watch the 2017 Spa showdown.",
+        "latitude": 50.4369,
+        "longitude": 5.9720
+    },
+    
+    {
+        "id": 15,
+        "circuitImg": "netherlandsLayout",
+        "flagImg": "netherlands",
+        "countryName": "Netherlands",
+        "firstGrandPrix": 1952,
+        "circuitLength": 4.259,
+        "numberOfLaps": 72,
+        "raceDistance": 306.648,
+        "lapRecord": "1:11.097 - Lewis Hamilton (2021)",
+        "whyCountry": "Zandvoort combines a lot of enticing features for an F1 fan. There’s the historic track, which famously featured in John Frankenheimer’s Grand Prix, and was the scene of many great F1 moments over the years (Gilles Villeneuve’s three-wheeled lap, anyone?). There’s the atmosphere, which with Max Verstappen on the grid is set to be electric, and most definitely orange-hued. And then there’s the beachside location, just a 30-minute train ride outside of Amsterdam. What’s not to love?",
+        "latitude": 52.3866,
+        "longitude": 4.5379
+    },
+    
+    {
+        "id": 16,
+        "circuitImg": "italyLayout",
+        "flagImg": "italy",
+        "countryName": "Italy",
+        "firstGrandPrix": 1950,
+        "circuitLength": 5.793,
+        "numberOfLaps": 53,
+        "raceDistance": 306.720,
+        "lapRecord": "1:21.046 - Rubens Barrichello (2004)",
+        "whyCountry": "The parkland setting of Monza, located just to the north east of Italy’s fashion capital Milan, makes for a relaxed, leafy setting for a Grand Prix, while the preserved Monza banking – spot it in the background as the cars exit the Parabolica, as well as on the flyover bridge they pass under en route to the Variante Ascari – leaves you in no doubt that you’re in the presence of a very special race track.",
+        "latitude": 45.583332,
+        "longitude": 9.266667
+    },
+    
+    {
+        "id": 17,
+        "circuitImg": "singaporeLayout",
+        "flagImg": "singapore",
+        "countryName": "Singapore",
+        "firstGrandPrix": 2008,
+        "circuitLength": 5.063,
+        "numberOfLaps": 61,
+        "raceDistance": 308.706,
+        "lapRecord": "1:41.905 - Kevin Magnussen (2018)",
+        "whyCountry": "If you want to see Singapore at its best, there’s no better time to do so than when Formula 1 arrives in the heart of this buzzing city. Get the lay of the land by taking a ride on the Singapore Flyer, a giant Ferris wheel overlooking the track’s permanent pits complex, then get stuck into Singapore’s incredible bar and restaurant scene. Cocktail fanatics should also make a pilgrimage to the famous Raffles Hotel – the proper home of the Singapore Sling (non-alcoholic versions are available!)",
+        "latitude": 1.2882,
+        "longitude": 103.8585
+    },
+    
+    {
+        "id": 18,
+        "circuitImg": "japanLayout",
+        "flagImg": "japan",
+        "countryName": "Japan",
+        "firstGrandPrix": 1987,
+        "circuitLength": 5.807,
+        "numberOfLaps": 53,
+        "raceDistance": 307.471,
+        "lapRecord": "1:30.983 - Lewis Hamilton (2019)",
+        "whyCountry": "A track that has witnessed an unfair share of legendary F1 moments (not least between Messrs Prost and Senna), a unique set of fans with an unabashed commitment to playing Formula 1 dress-up, a Ferris wheel, and great food. Okay, for most of us it’s a long slog to get there, but surely a better question is: ‘Why not go?’",
+        "latitude": 34.8456,
+        "longitude": 136.5390
+    },
+    
+    {
+        "id": 19,
+        "circuitImg": "USALayout",
+        "flagImg": "usa",
+        "countryName": "USA",
+        "firstGrandPrix": 2012,
+        "circuitLength": 5.513,
+        "numberOfLaps": 56,
+        "raceDistance": 308.405,
+        "lapRecord": "1:36.169 - Charles Leclerc (2019)",
+        "whyCountry": "There’s a reason Austin is often regarded as America’s coolest city, with great food and a vibrant nightlife, all united under the banner of the city’s unofficial slogan: ‘Keep Austin Weird’. Then when racing starts, you’ll be in attendance at one of the great modern race tracks. With the Americans’ attitude to partying, you won’t want to miss out!",
+        "latitude": 30.1346,
+        "longitude": -97.6359
+    },
+    
+    {
+        "id": 20,
+        "circuitImg": "mexicoLayout",
+        "flagImg": "mexico",
+        "countryName": "Mexico",
+        "firstGrandPrix": 1963,
+        "circuitLength": 4.304,
+        "numberOfLaps": 71,
+        "raceDistance": 305.354,
+        "lapRecord": "1:18.741 - Valtteri Bottas (2018)",
+        "whyCountry": "Mexico City is one of the world’s most buzzing, vibrant metropolises. And with the Autodromo Hermanos Rodriguez located just to the east of the city, with a metro station ready to whip you into the downtown at the end of each day’s racing action, the Mexican Grand Prix is a fantastic chance to properly mix sport and culture.",
+        "latitude": 19.4025,
+        "longitude": -99.0866
+    },
+    
+    {
+        "id": 21,
+        "circuitImg": "brazilLayout",
+        "flagImg": "brazil",
+        "countryName": "Brazil",
+        "firstGrandPrix": 1973,
+        "circuitLength": 4.309,
+        "numberOfLaps": 71,
+        "raceDistance": 305.879,
+        "lapRecord": "1:10.540 - Valtteri Bottas (2018)",
+        "whyCountry": "A carnival atmosphere really does dominate in Brazil, and watching Formula 1 cars alongside the locals is something every F1 fan should experience. True, it doesn’t look like there’ll be a local driver to cheer on any time soon, but that won’t stop the party at Interlagos.",
+        "latitude": -23.7022,
+        "longitude": -46.6932
+    },
+    
+    {
+        "id": 22,
+        "circuitImg": "abuDhabiLayout",
+        "flagImg": "uae",
+        "countryName": "Abu Dhabi",
+        "firstGrandPrix": 2009,
+        "circuitLength": 5.281,
+        "numberOfLaps": 58,
+        "raceDistance": 306.183,
+        "lapRecord": "1:26.103 - Max Verstappen (2021)",
+        "whyCountry": "Yas Island was a blank canvas for developers to turn into a tourist attraction, and 11 years and $40 billion later, they’ve nearly finished doing just that. Seven hotels, Ferrari’s indoor theme park, a mall, a water park, a golf course, a beach, a concert arena and a nightclub, all framed by perfect Emirati weather. What more could you want?",
+        "latitude": 24.4670,
+        "longitude": 54.6018
+    }
+]
